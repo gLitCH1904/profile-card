@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;   
+ }
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+ 
+.circle-2{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 50%;
+    width: 50%;
+    bottom: 0;
+    left: 50%;
+}
+
+.circle-1{
+   bottom: 75%;
+    position: absolute;
+    z-index: 1;
+   
+    height: 100%;
+    right: 50%;
+   
+}
+
+body{
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 2rem;
+    position: relative;
+    font-family: 'Kumbh Sans' , sans-serif;
+}
+
+.container{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    z-index: 2;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img{
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container img:nth-child(2){
+    z-index: 3;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 135px;
+    bottom: 48%;
+    border: 4px solid white;
+}
+
+.details{
+    margin-top: 55px;
+    padding-bottom: 30px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size : 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details span:nth-child(1){
+   margin-left: 8px;
+}
+
+.details div:nth-child(2) span{
+    font-size: 12px;
+    margin-top: 20px;;
+}
+
+.details span{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.socials{
+    margin-top: 30px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size : 16px;
+}
+
+.socials span{
+    color: var(--Dark-gray);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.socials li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
